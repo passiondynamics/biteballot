@@ -13,3 +13,4 @@
 - Recommend nearby restaurants to users
 - Allow users to save restaurants as favorites
 - Allow users to create groups with shared favorites allowing for the (pick favorites option where users preload all their favorites into the ballot)
+- Check restaurants to see if you can make a reservation with Resy, Open Table, or Google
