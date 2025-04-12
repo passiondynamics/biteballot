@@ -1,0 +1,16 @@
+- Make a profile
+    - Username/Password
+- Add friends or just have a code to create a group 
+- Host a ballot
+- Join a ballot
+- Decide the type of ballot (Multi-vote, single vote, elimination, majority wins, around the horn)
+    - Multi-vote: vote for multiple options
+    - Single vote: can only pick one option
+    - Elimination: Pick a place you don't want to go to loser gets eliminated every round until there's on restaurant standing
+    - Majority wins: Simple one round vote whichever restaurant gets the most votes wins in the event of a tie do those two or more restaurants again this time with single vote only
+    - Around the horn: send the options to one user and they choose to eliminate one then the next person eliminates one then the next until there is one restaurant remaining
+- All users can add X amount of restaurants host can set X to a limited number or unlimited number
+- Recommend nearby restaurants to users
+- Allow users to save restaurants as favorites
+- Allow users to create groups with shared favorites allowing for the (pick favorites option where users preload all their favorites into the ballot)
+- Check restaurants to see if you can make a reservation with Resy, Open Table, or Google
