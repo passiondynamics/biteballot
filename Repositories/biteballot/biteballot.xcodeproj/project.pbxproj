@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B8D46852DAA2199008ADBD0 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8D46842DAA2199008ADBD0 /* ProfileView.swift */; };
+		3B8D46872DAA2293008ADBD0 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8D46862DAA2293008ADBD0 /* AuthService.swift */; };
+		3B8D46892DAA23A4008ADBD0 /* ProfileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8D46882DAA23A4008ADBD0 /* ProfileUITests.swift */; };
+		3B8D468B2DAA23F6008ADBD0 /* AuthServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8D468A2DAA23F6008ADBD0 /* AuthServicesTests.swift */; };
 		3BB50BFC2DA9F71D0012A6A2 /* biteballotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB50BFB2DA9F71D0012A6A2 /* biteballotApp.swift */; };
 		3BB50BFE2DA9F71D0012A6A2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB50BFD2DA9F71D0012A6A2 /* ContentView.swift */; };
 		3BB50C002DA9F71F0012A6A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BB50BFF2DA9F71F0012A6A2 /* Assets.xcassets */; };
@@ -34,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B8D46842DAA2199008ADBD0 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		3B8D46862DAA2293008ADBD0 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthService.swift; path = Services/AuthService.swift; sourceTree = "<group>"; };
+		3B8D46882DAA23A4008ADBD0 /* ProfileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUITests.swift; sourceTree = "<group>"; };
+		3B8D468A2DAA23F6008ADBD0 /* AuthServicesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServicesTests.swift; sourceTree = "<group>"; };
 		3BB50BF82DA9F71D0012A6A2 /* biteballot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = biteballot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BB50BFB2DA9F71D0012A6A2 /* biteballotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = biteballotApp.swift; sourceTree = "<group>"; };
 		3BB50BFD2DA9F71D0012A6A2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +105,8 @@
 				3BB50BFB2DA9F71D0012A6A2 /* biteballotApp.swift */,
 				3BB50BFD2DA9F71D0012A6A2 /* ContentView.swift */,
 				3BB50BFF2DA9F71F0012A6A2 /* Assets.xcassets */,
+				3B8D46842DAA2199008ADBD0 /* ProfileView.swift */,
+				3B8D46862DAA2293008ADBD0 /* AuthService.swift */,
 				3BB50C012DA9F71F0012A6A2 /* Preview Content */,
 			);
 			path = biteballot;
@@ -114,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				3BB50C0C2DA9F7200012A6A2 /* biteballotTests.swift */,
+				3B8D468A2DAA23F6008ADBD0 /* AuthServicesTests.swift */,
 			);
 			path = biteballotTests;
 			sourceTree = "<group>";
@@ -123,6 +134,7 @@
 			children = (
 				3BB50C162DA9F7200012A6A2 /* biteballotUITests.swift */,
 				3BB50C182DA9F7200012A6A2 /* biteballotUITestsLaunchTests.swift */,
+				3B8D46882DAA23A4008ADBD0 /* ProfileUITests.swift */,
 			);
 			path = biteballotUITests;
 			sourceTree = "<group>";
@@ -258,7 +270,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BB50BFE2DA9F71D0012A6A2 /* ContentView.swift in Sources */,
+				3B8D46852DAA2199008ADBD0 /* ProfileView.swift in Sources */,
 				3BB50BFC2DA9F71D0012A6A2 /* biteballotApp.swift in Sources */,
+				3B8D46872DAA2293008ADBD0 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BB50C0D2DA9F7200012A6A2 /* biteballotTests.swift in Sources */,
+				3B8D468B2DAA23F6008ADBD0 /* AuthServicesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +291,7 @@
 			files = (
 				3BB50C192DA9F7200012A6A2 /* biteballotUITestsLaunchTests.swift in Sources */,
 				3BB50C172DA9F7200012A6A2 /* biteballotUITests.swift in Sources */,
+				3B8D46892DAA23A4008ADBD0 /* ProfileUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

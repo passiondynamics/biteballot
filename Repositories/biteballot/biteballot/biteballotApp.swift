@@ -11,7 +11,7 @@ import SwiftUI
 struct biteballotApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView() // This shows ProfileView now, via ContentView
         }
     }
 }

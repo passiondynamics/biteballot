@@ -9,13 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ProfileView()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView()  // The view you want to preview
+            .previewDevice("iPhone 13")  // Specify the device for preview (optional)
+            .previewLayout(.sizeThatFits)  // Fit the preview to the size of the content
     }
 }
