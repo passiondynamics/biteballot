@@ -8,10 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var profileSaved: Bool = false
+
     var body: some View {
-        ProfileView()
+        Group {
+            if profileSaved {
+                BallotSelectionView()
+            } else {
+                ProfileView(profileSaved: $profileSaved)
+            }
+        }
+        .onAppear {
+            profileSaved = AuthService.isProfileSaved()
+        }
     }
 }
+
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

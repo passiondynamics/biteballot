@@ -7,9 +7,23 @@
 
 import Foundation
 
-enum AuthService {
+struct AuthService {
+    
     static func saveProfile(username: String, password: String) {
-        UserDefaults.standard.set(username, forKey: "username")
-        UserDefaults.standard.set(password, forKey: "password")
+        let profile = UserProfile(username: username, password: password)
+        profile.save()
+    }
+    
+    static func loadProfile() -> UserProfile? {
+        return UserProfile.load()
+    }
+
+    static func isProfileSaved() -> Bool {
+        return UserProfile.load() != nil
+    }
+
+    static func clearProfile() {
+        UserProfile.clear()
     }
 }
+

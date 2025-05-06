@@ -6,12 +6,13 @@
 //
 import SwiftUI
 
-
 struct ProfileView: View {
+    @Binding var profileSaved: Bool
+
     @State private var username: String = ""
     @State private var password: String = ""
-    
-    @State private var savedUsername: String? = nil // ✨ New state to track saved username
+
+    @State private var savedUsername: String? = nil
 
     var body: some View {
         VStack(spacing: 20) {
@@ -29,9 +30,9 @@ struct ProfileView: View {
                 .accessibilityIdentifier("passwordTextField")
 
             Button(action: {
-                print("🔒 Saving username: \(username), password: \(password)")
                 AuthService.saveProfile(username: username, password: password)
-                savedUsername = username // ✨ Save username locally to show
+                savedUsername = username
+                profileSaved = true // Signal to ContentView to show next screen
             }) {
                 Text("Save Profile")
                     .fontWeight(.semibold)
@@ -43,7 +44,6 @@ struct ProfileView: View {
             }
             .accessibilityIdentifier("profileButton")
 
-            // ✨ Add this to show the saved username
             if let savedUsername = savedUsername {
                 Text("Saved username: \(savedUsername)")
                     .accessibilityIdentifier("savedUsernameLabel")

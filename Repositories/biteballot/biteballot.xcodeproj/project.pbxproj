@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B64F79C2DCA83FE00119EB6 /* BallotSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B64F79B2DCA83FE00119EB6 /* BallotSelectionView.swift */; };
+		3B64F79E2DCA864100119EB6 /* HostBallotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B64F79D2DCA864100119EB6 /* HostBallotView.swift */; };
+		3B64F7A02DCA865900119EB6 /* JoinBallotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B64F79F2DCA865900119EB6 /* JoinBallotView.swift */; };
+		3B64F7A22DCA87C900119EB6 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B64F7A12DCA87C900119EB6 /* UserProfile.swift */; };
+		3B64F7A42DCAA91700119EB6 /* BallotTypeSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B64F7A32DCAA91700119EB6 /* BallotTypeSelectionView.swift */; };
 		3B8D46852DAA2199008ADBD0 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8D46842DAA2199008ADBD0 /* ProfileView.swift */; };
 		3B8D46872DAA2293008ADBD0 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8D46862DAA2293008ADBD0 /* AuthService.swift */; };
 		3B8D46892DAA23A4008ADBD0 /* ProfileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8D46882DAA23A4008ADBD0 /* ProfileUITests.swift */; };
@@ -38,8 +43,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B64F79B2DCA83FE00119EB6 /* BallotSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallotSelectionView.swift; sourceTree = "<group>"; };
+		3B64F79D2DCA864100119EB6 /* HostBallotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostBallotView.swift; sourceTree = "<group>"; };
+		3B64F79F2DCA865900119EB6 /* JoinBallotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinBallotView.swift; sourceTree = "<group>"; };
+		3B64F7A12DCA87C900119EB6 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		3B64F7A32DCAA91700119EB6 /* BallotTypeSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallotTypeSelectionView.swift; sourceTree = "<group>"; };
 		3B8D46842DAA2199008ADBD0 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		3B8D46862DAA2293008ADBD0 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthService.swift; path = Services/AuthService.swift; sourceTree = "<group>"; };
+		3B8D46862DAA2293008ADBD0 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		3B8D46882DAA23A4008ADBD0 /* ProfileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUITests.swift; sourceTree = "<group>"; };
 		3B8D468A2DAA23F6008ADBD0 /* AuthServicesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServicesTests.swift; sourceTree = "<group>"; };
 		3BB50BF82DA9F71D0012A6A2 /* biteballot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = biteballot.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +89,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B030BFF2DCA82EE001C6D1E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3B64F7A12DCA87C900119EB6 /* UserProfile.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3B030C002DCA8323001C6D1E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3B8D46862DAA2293008ADBD0 /* AuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		3BB50BEF2DA9F71D0012A6A2 = {
 			isa = PBXGroup;
 			children = (
@@ -102,11 +128,12 @@
 		3BB50BFA2DA9F71D0012A6A2 /* biteballot */ = {
 			isa = PBXGroup;
 			children = (
+				3B030C002DCA8323001C6D1E /* Services */,
+				3B030BFF2DCA82EE001C6D1E /* Models */,
+				3BD309022DCA7B9C00527273 /* Views */,
 				3BB50BFB2DA9F71D0012A6A2 /* biteballotApp.swift */,
 				3BB50BFD2DA9F71D0012A6A2 /* ContentView.swift */,
 				3BB50BFF2DA9F71F0012A6A2 /* Assets.xcassets */,
-				3B8D46842DAA2199008ADBD0 /* ProfileView.swift */,
-				3B8D46862DAA2293008ADBD0 /* AuthService.swift */,
 				3BB50C012DA9F71F0012A6A2 /* Preview Content */,
 			);
 			path = biteballot;
@@ -137,6 +164,18 @@
 				3B8D46882DAA23A4008ADBD0 /* ProfileUITests.swift */,
 			);
 			path = biteballotUITests;
+			sourceTree = "<group>";
+		};
+		3BD309022DCA7B9C00527273 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3B8D46842DAA2199008ADBD0 /* ProfileView.swift */,
+				3B64F79B2DCA83FE00119EB6 /* BallotSelectionView.swift */,
+				3B64F79D2DCA864100119EB6 /* HostBallotView.swift */,
+				3B64F79F2DCA865900119EB6 /* JoinBallotView.swift */,
+				3B64F7A32DCAA91700119EB6 /* BallotTypeSelectionView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +310,11 @@
 			files = (
 				3BB50BFE2DA9F71D0012A6A2 /* ContentView.swift in Sources */,
 				3B8D46852DAA2199008ADBD0 /* ProfileView.swift in Sources */,
+				3B64F79E2DCA864100119EB6 /* HostBallotView.swift in Sources */,
+				3B64F7A42DCAA91700119EB6 /* BallotTypeSelectionView.swift in Sources */,
+				3B64F79C2DCA83FE00119EB6 /* BallotSelectionView.swift in Sources */,
+				3B64F7A22DCA87C900119EB6 /* UserProfile.swift in Sources */,
+				3B64F7A02DCA865900119EB6 /* JoinBallotView.swift in Sources */,
 				3BB50BFC2DA9F71D0012A6A2 /* biteballotApp.swift in Sources */,
 				3B8D46872DAA2293008ADBD0 /* AuthService.swift in Sources */,
 			);
